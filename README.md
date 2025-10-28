@@ -54,49 +54,12 @@ python -m venv .venv
 # macOS/Linux
 source .venv/bin/activate
 
-# 2) Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 # If you don't have requirements.txt:
 pip install typer mysql-connector-python
 ---
-##  ▶️ Run
-python3 src/main.py
+### Run the origran
+---Run
+- python3 src/main.py
 ---
-
-## 🕹️ Supported Commands (Manual Loop)
-
-CREATE DATABASE: 
-Creates a database after prompting for its name.
-
-CREATE TABLE
-Lists databases
-Asks which DB to use
-Asks for table name, first column name, and type (int or varchar)
-Creates the table with a single column
-
-DROP DATABASE
-Lists DBs and prompts which one to drop.
-
-DROP TABLE
-Lists DBs and prompts which DB to use
-Lists tables and prompts which one to drop
-
-ALTER TABLE
-Lists DBs and prompts which DB to use
-Lists tables and prompts which one to alter
-Prompts a new column name and type (int or varchar) and adds it
-
-INSERT INTO
-Lists DBs → choose DB
-Lists tables → choose table
-Shows table schema (DESCRIBE)
-Prompts values as comma-separated list, e.g. john, 42
-Validates the number of values equals the number of columns
-Inserts using placeholders (%s)
-Type conversion is not enforced here; ensure your input matches column types
-
---HELP
-Prints the tool’s manual page.
-
-EXIT
-Ends the program.
