@@ -58,8 +58,3 @@ source .venv/bin/activate
 pip install -r requirements.txt
 # If you don't have requirements.txt:
 pip install typer mysql-connector-python
----
-### Run the origran
----Run
-- python3 src/main.py
----
